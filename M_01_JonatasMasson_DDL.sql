@@ -2,6 +2,8 @@ create database M_Opflix
 
 use M_Opflix;
 
+set dateformat dmy
+
 create table Genero (
 	IdGenero int primary key identity
 	,Nome Varchar(255) not null unique
@@ -28,11 +30,15 @@ create table TipoUsuario (
 );
 
 create table Usuario(
-	IdUsuario	int primary key identity
+	IdUsuario int primary key identity
 	,Nome Varchar(255) not null unique
 	,Email Varchar(255) not null unique
 	,Senha Varchar(255) not Null unique
 	,IdTipoUsuario int foreign key references TipoUsuario (IdTipoUsuario)
 );
 
+create table LancamentoFavorito (
+	IdLancamento int foreign key references Lancamento (IdLancamento)
+	,IdUsuario int foreign key references Usuario (IdUsuario)
+);
 
