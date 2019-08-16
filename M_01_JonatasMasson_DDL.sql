@@ -33,7 +33,7 @@ create table Usuario(
 	IdUsuario int primary key identity
 	,Nome Varchar(255) not null unique
 	,Email Varchar(255) not null unique
-	,Senha Varchar(255) not Null unique
+	,Senha Varchar(255) not Null
 	,IdTipoUsuario int foreign key references TipoUsuario (IdTipoUsuario)
 );
 

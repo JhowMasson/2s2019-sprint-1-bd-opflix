@@ -17,11 +17,10 @@ insert into Lancamento (Nome, TempoDuracao, DataLancamento, Sinopse, IdGenero, I
 	('As Tranças do Rei Careca', '02:45:00', '2017-03-28', 'Tudo parece perdido no reino de Cabelândia, quando um rei careca perde o seu renomado shampoo para suas tranças naturais. Para recuperar seu produto muitas pessoas pagaram caro', 4, 1); 
 
 insert into Usuario (Nome, Email, Senha, IdTipoUsuario) values
-	('Astrogildo', 'astroestrela@gmail.com', 'astros369', 2),
-	('Cleiton', 'cleitaododjabo@gmail.com','elmachips333', 2),
-	('Carlão', 'carlos123@hotmail.com', 'carlos123dev', 3),
-	('Jhow', 'jonatasboladao@hotmail.com', 'jotajota777', 2),
-	('Raul', 'euamoletras@hotmail.com', 'letrasnaUSP', 1);
+	('Erik', 'erik@email.com', '123456', 1),
+	('Cassiana', 'cassiana@email.com', '123456', 1),
+	('Helena', 'helena@email.com', '123456', 2),
+	('Roberto', 'rob@email.com', '3110', 2);
 
 insert into LancamentoFavorito (IdLancamento, IdUsuario) values
-	(5, 2), (3, 1), (1, 3), (2, 4), (4, 5);
+	(5, 2), (3, 1), (1, 3), (2, 4);
